@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="header">
+        <h1>WEATHER APP</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter Indian city name">
+            <button id="search" onclick="searchByCity()">Search</button></input>
+        </div>
+
+        <div>
+            <input type="radio"  onclick="toggleMode()" >lightMode/darkMode</input>
+        </div>
+
+    </div>
+
+
+    <main>        
+        <div class="weather">
+            <h2 id="city">city,IND</h2>
+            <div class="temp-box">
+                <img src="/weathericon.png" alt="" id="img">
+                <p id="temperature">29 °C</p> 
+            </div>
+            
+            <span id="clouds">Broken Clouds</span>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 79 °F</p> 
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">11:30 PM</p>
+                        <p>26 °C /  75°F</p>
+                    </div>
+                    <p class="desc">Clear Sky</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">2:30 AM</p>
+                        <p>29 °C / 79 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">5:30 PAM</p>
+                        <p>28 °C / 77 °F</p>
+                    </div>
+                    <p class="desc">Clear Sky</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 AM</p>
+                        <p>29 °C / 79 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header"> Next 7 days forecast</p>
+        <div class="weekF">
+
+            <div class="dayF">
+                <p class="date">Sat oct 14 2023</p>
+                <p>31 °C / 87 °F</p> 
+                <p class="desc">Overcast </p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun oct 15 2023</p>
+                <p>29 °C / 85 °F</p> 
+                <p class="desc">Overcast </p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Mon oct 16 2023</p>
+                <p>30 °C / 86 °F</p>
+                <p class="desc">Overcast </p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Tue oct 17 2023</p>
+                <p>27 °C / 83 °F</p>
+                <p class="desc">Overcast </p>
+            </div>
+            <div class="dayF">
+                <p class="date">Wed oct 18 2023</p>
+                <p>28 °C / 84 °F</p>
+                <p class="desc">Overcast </p>
+            </div>
+            <div class="dayF">
+                <p class="date">thu oct 19 2023</p>
+                <p>29 °C / 85°F</p>
+                <p class="desc">Overcast </p>
+            </div>
+            <div class="dayF">
+                <p class="date">Fri oct 20 2023</p>
+                <p>31 °C / 87 °F</p>
+                <p class="desc">Overcast </p>
+            </div>
+        </div>
+    </div>
+    <script src="/weather.js"></script>
+</body>
+</html>
